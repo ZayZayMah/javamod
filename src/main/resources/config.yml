@@ -1,0 +1,42 @@
+# ZayStaff config. Restart the server after editing.
+bedrock-prefix: "."
+
+anticheat:
+  enabled: true
+  # Bedrock players (through Geyser) get slightly looser limits
+  bedrock-leniency: 1.25
+
+automod:
+  enabled: true
+  # Words matched anywhere inside a token (4+ letters). Level 2 = severe.
+  severe-contains: [nigger, nigga, faggot, retard, tranny]
+  # Short / risky words, only matched as a whole word (plurals/-ing/-er also caught)
+  severe-exact: [kike, chink, spic, coon, paki, dyke, kys, fag]
+  # Level 1 = mild profanity
+  mild-contains: [fuck, shit, bitch, cunt, bastard, piss, whore, slut, wank, twat, asshole, dickhead]
+  mild-exact: [ass, dick, cock, damn, crap, prick, bollocks]
+  # Whole words that must never be flagged
+  safe-words: [snigger, sniggers, scunthorpe, assassin, assassins, class, grass, pass, bass, glass, mass, classic, assist]
+  # Multi-word phrases (level 2)
+  phrases: ["kill yourself", "go die"]
+  advertising:
+    enabled: true
+    allowed: []
+  spam:
+    enabled: true
+    max-messages: 5
+    per-seconds: 5
+  # Commands whose text is also filtered
+  filtered-commands: [msg, tell, w, whisper, me, say, r, reply, t, pm, m]
+
+# Preset punishments for /punish  (Name|level|reason). Levels: 1=1pt 2=1.5pt 3=2pt 4=5pt 5=10pt.
+# A player is banned automatically when the points from their last 30 days of flags reach 10.
+punish-presets:
+  - "Hacking|4|Hacking / unfair advantage"
+  - "Chat abuse|2|Chat abuse"
+  - "Spam|1|Spam"
+  - "Advertising|2|Advertising"
+  - "Griefing|3|Griefing"
+  - "Bug abuse|3|Exploiting a bug"
+  - "Toxicity|2|Toxic behaviour"
+  - "Severe offence|5|Severe offence"

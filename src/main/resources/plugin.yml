@@ -1,0 +1,78 @@
+name: ZayStaff
+version: 1.0.0
+main: dev.zay.staff.StaffPlugin
+api-version: "1.21"
+description: Staff toolkit, automod and anti-cheat (DonutSMP style)
+commands:
+  sfmode:
+    description: Toggle staff mode (operators only)
+  sfhelp:
+    description: List staff commands
+  gms:
+    description: Survival mode
+  gmsp:
+    description: Spectator mode
+  gmc:
+    description: Creative mode
+  gma:
+    description: Adventure mode
+  inventory:
+    description: View and manage a player's inventory
+    aliases: [invsee, inv]
+  echest:
+    description: View a player's ender chest
+  freeze:
+    description: Freeze or unfreeze a player
+  flag:
+    description: Add or remove a flag
+  flags:
+    description: Open the flagged players menu
+  logs:
+    description: Show the last 500 admin logs
+  sftp:
+    description: Teleport to a player while vanished
+  vstop:
+    description: Leave vanish
+  mute:
+    description: Mute a player
+  unmute:
+    description: Unmute a player
+  heal:
+    description: Heal a player
+  feed:
+    description: Feed a player
+  fly:
+    description: Toggle flight
+  god:
+    description: Toggle invulnerability
+  speed:
+    description: Set fly/walk speed
+  clearchat:
+    description: Clear chat for everyone
+  bc:
+    description: Broadcast a message
+  sc:
+    description: Staff chat
+  cleardata:
+    description: Wipe all data of a player
+  tempban:
+    description: Temporarily ban a player
+  unban:
+    description: Unban a player
+  data:
+    description: Show a player's data and flags in chat
+    aliases: [history]
+  punish:
+    description: Preset punishment menu
+  near:
+    description: List nearby players
+  seen:
+    description: When was a player last online
+  vstart:
+    description: Enter vanish
+  alerts:
+    description: Toggle flag alerts
+permissions:
+  zaystaff.bypass:
+    description: Bypass automod and anti-cheat
+    default: false
